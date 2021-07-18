@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWL Carrousel 2</title>
+
+    <!-- Link de estilos -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <!-- Estilos de OWL -->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/owlcarousel/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+      <div class="container">
+        <h1>Partner Comercial</h1>
+      <div class="owl-carousel owl-theme">
+        <div class="item-carousel"><img src="https://logos-marcas.com/wp-content/uploads/2021/02/IBM-best-logo-650x366.jpg" alt="IBM"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/H/hp-logo-EEECF99DCE-seeklogo.com.png" alt="HP"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/M/microsoft-office-365-logo-C06AEBE075-seeklogo.com.png" alt="Office 365"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/D/dell-logo-49B6BF5FC9-seeklogo.com.png" alt="dell"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/L/lenovo-logo-E125AE3250-seeklogo.com.png" alt="Lenovo"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/L/linux-logo-3793382FC8-seeklogo.com.png" alt="Linux"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/L/logitech-logo-376B7C6FCC-seeklogo.com.png" alt="Logitech"></div>
+        <div class="item-carousel"><img src="https://seeklogo.com/images/S/spotify-2015-logo-560E071CB7-seeklogo.com.png" alt="spotify"></div>
+      </div>
+
+
+      <footer>
+          <p>&#169; 2021 por <span>Carlos Villatoro</span></p>
+      </footer>
+
+    <!-- Scripts -->
+    <script src="jquery.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            dots: false,
+            loop: true,
+            margin: 50,
+            /* center: true, */
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive:{
+                0: {
+                    items:1,
+                },
+                480: {
+                    items:2,
+                },
+                768: {
+                    items:5,
+                }
+            },  
+        });
+      });
+    </script>
+  </body>
+</html>
